@@ -23,7 +23,7 @@ const BulkPdfUploader = () => {
 
     try {
       setUploading(true);
-      const res = await axios.post('http://127.0.0.1:8000/api/upload/', formData, {
+      const res = await axios.post('https://akashak.online/api/upload/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

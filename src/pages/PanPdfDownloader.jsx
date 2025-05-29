@@ -19,7 +19,7 @@ const PanPdfDownloader = () => {
             setError(null);
             setSuccess(null);
 
-            const response = await axios.get(`http://127.0.0.1:8000/api/download/${panNumber.trim()}/`, {
+            const response = await axios.get(`https://akashak.online/api/download/${panNumber.trim()}/`, {
                 responseType: 'blob'
             });
 
